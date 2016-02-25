@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en" ng-app="mainApp">
+<head>
+  <meta charset="utf-8">
+
+  <title>Scheds</title>
+  <meta name="description" content="Vend Scheds app">
+  <meta name="author" content="Mazin">
+
+  <!-- Dependencies -->
+  <script src="javascripts/jquery-2.2.0.min.js"></script>
+  <script src="javascripts/angular.min.js"></script>
+  <script src="javascripts/angular-ui-router.min.js"></script>
+
+  <!-- Firebase and AngularFire scripts -->
+  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+
+  <!-- Angularjs scripts -->
+  <script src="app/mainApp.js"></script>
+  <script src="app/controller/homeController.js"></script>
+  <script src="app/directives/directives.js"></script>
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="stylesheets/styles.css">
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body class="container" ng-controller="homeController">
+	<h1>Schedz app</h1>
+	<div class="row">
+		<div class="col-md-8">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th ng-repeat="day in days" ng-class="col-md-1">{{day}}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="row in rows track by row.id">
+						<th ng-class="col-md-1" ng-repeat="staff in row.data track by $index">
+							<editable staff="staff"></editable>
+						</th>
+					</tr>
+				</tbody>	
+			</table>	
+		</div>
+	</div>
+</body>
+</html>
