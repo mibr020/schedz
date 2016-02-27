@@ -1,7 +1,7 @@
 angular.module("mainApp").directive("editable", Editable);
 angular.module("mainApp").directive("focusMode", FocusMode);
 
-function Editable($parse) {
+function Editable() {
 	return{
 		restrict: 'E',
 		replace: true,
@@ -28,6 +28,16 @@ function Editable($parse) {
 				});
 				//alert(latestEl.attr('class') == "table-cell ng-binding");
 			});*/
+		}
+	}
+};
+
+function FocusMode() {
+	return{
+		restrict: 'A',
+		replace: true,
+		link: function(scope, element, attrs){
+			scope.$watch(attrs.)
 		}
 	}
 };
