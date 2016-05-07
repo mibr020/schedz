@@ -1,6 +1,12 @@
-var mainApp = angular.module("mainApp", ["firebase", "ui.router"]);
+var mainApp = angular.module("mainApp", ['ui.router', 'ngMaterial']); //Add firebase
 
 //var homeController = mainApp.controller('homeController', homeController);
+
+//Body of code will be executed when app loads
+mainApp.run(function($rootScope){
+	//alert('potato');
+});
+
 
 
 mainApp.config(function($stateProvider, $urlRouterProvider) {

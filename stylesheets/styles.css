@@ -8791,3 +8791,53 @@ button.close {
     display: none !important;
   }
 }
+/* line 28, ../sass/styles.scss */
+::-webkit-input-placeholder {
+  color: black;
+}
+
+/* line 29, ../sass/styles.scss */
+:-moz-placeholder {
+  color: black;
+}
+
+/* line 30, ../sass/styles.scss */
+::-moz-placeholder {
+  color: black;
+}
+
+/* line 31, ../sass/styles.scss */
+:-ms-input-placeholder {
+  color: black;
+}
+
+/* line 38, ../sass/styles.scss */
+input.table-cell,
+input.time-slot {
+  border: none;
+  background: transparent;
+  width: 100px;
+  text-align: left;
+}
+
+/* line 47, ../sass/styles.scss */
+input.time-slot {
+  display: block;
+  text-align: center;
+  font-size: 8.5px;
+  border-radius: 2px;
+  width: 100px;
+}
+
+/* line 56, ../sass/styles.scss */
+th.cell-container:first-of-type {
+  background: #B993D6;
+}
+/* line 58, ../sass/styles.scss */
+th.cell-container:first-of-type input.table-cell {
+  text-align: center;
+}
+/* line 61, ../sass/styles.scss */
+th.cell-container:first-of-type input.time-slot {
+  text-align: center;
+}

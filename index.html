@@ -21,8 +21,10 @@
   <script src="app/mainApp.js"></script>
   <script src="app/controller/homeController.js"></script>
   <script src="app/directives/directives.js"></script>
+  <script src="app/services/formatService.js"></script>
 
   <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
 
 
@@ -32,24 +34,103 @@
 </head>
 
 <body class="container" ng-controller="homeController">
-	<h1>Schedz app</h1>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="col-md-6 col-md-offset-3">Schedz app</h1>
+    </div>
+  </div>
 	<div class="row">
-		<div class="col-md-8">
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th ng-repeat="day in days" ng-class="col-md-1">{{day}}</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr ng-repeat="row in rows track by row.id">
-						<th ng-class="col-md-1" ng-repeat="staff in row.data track by $index">
-							<editable staff="staff"></editable>
-						</th>
-					</tr>
-				</tbody>	
-			</table>	
-		</div>
-	</div>
+    <div class="col-md-8 col-md-offset-2 form-group">
+      <input type="text" class="form-control" id="main-input-field" ng-model="commandField" ng-blur="inputCommand(commandField)"/>
+    </div>
+  </div>
+    <div ng-cloak>
+    <md-content>
+      <md-tabs md-dynamic-height md-border-bottom>
+        <md-tab label="Auckland">
+          <md-content class="md-padding">
+            <table class="col-md-8 table table-striped">
+              <thead>
+                <tr>
+                  <th ng-repeat="day in days" ng-class="col-md-1">{{day}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-if="!row.deleted" ng-repeat="row in aucklandRows track by row.id">
+                  <th class="col-md-1 cell-container" ng-repeat="cell in row.data track by $index">
+                    <input class="table-cell" placeholder="{{cell}}" value={{cell}} ng-model="cell" ng-blur="updateTable(this, row)"/>
+                    <input class="time-slot" ng-style="{'background': '{{row.timeOfDay[$index]}}'}" ng-model="row.timeSlot[$index]" placeholder="{{row.timeSlot[$index]}}" ng-blur="formatTimeSlot(row.timeSlot[$index],row, $index)"/>
+                  </th>
+                </tr>
+              </tbody>  
+          </table>
+          </md-content>
+        </md-tab>
+        <md-tab label="Toronto">
+          <md-content class="md-padding">
+            <table class="col-md-8 table table-striped">
+              <thead>
+                <tr>
+                  <th ng-repeat="day in days" ng-class="col-md-1">{{day}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-if="!row.deleted" ng-repeat="row in torontoRows track by row.id">
+                  <th class="col-md-1 cell-container" ng-repeat="cell in row.data track by $index">
+                    <input class="table-cell" placeholder="{{cell}}" value={{cell}} ng-model="cell" ng-blur="updateTable(this, row)"/>
+                    <input class="time-slot" ng-style="{'background': '{{row.timeOfDay[$index]}}'}" ng-model="row.timeSlot[$index]" placeholder="{{row.timeSlot[$index]}}" ng-blur="formatTimeSlot(row.timeSlot[$index],row, $index)"/>
+                  </th>
+                </tr>
+              </tbody>  
+          </table>
+          </md-content>
+        </md-tab>
+        <md-tab label="London">
+          <md-content class="md-padding">
+            <table class="col-md-8 table table-striped">
+              <thead>
+                <tr>
+                  <th ng-repeat="day in days" ng-class="col-md-1">{{day}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-if="!row.deleted" ng-repeat="row in londonRows track by row.id">
+                  <th class="col-md-1 cell-container" ng-repeat="cell in row.data track by $index">
+                    <input class="table-cell" placeholder="{{cell}}" value={{cell}} ng-model="cell" ng-blur="updateTable(this, row)"/>
+                    <input class="time-slot" ng-style="{'background': '{{row.timeOfDay[$index]}}'}" ng-model="row.timeSlot[$index]" placeholder="{{row.timeSlot[$index]}}" ng-blur="formatTimeSlot(row.timeSlot[$index],row, $index)"/>
+                  </th>
+                </tr>
+              </tbody>  
+          </table>
+          </md-content>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+  </div>
+  <table class="col-md-8 table table-striped">
+      <thead>
+        <tr>
+          <th ng-repeat="day in days" ng-class="col-md-1">{{day}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-if="!row.deleted" ng-repeat="row in example track by row.id">
+          <th class="col-md-1 cell-container" ng-repeat="cell in row.data track by $index">
+            <input class="table-cell" placeholder="{{cell}}" value={{cell}} ng-model="cell" ng-blur="updateTable(this, row)"/>
+            <div>
+              <input ng-if="!$first" class="time-slot" ng-style="{'background': '{{row.timeOfDay[$index]}}'}" ng-model="row.timeSlot[$index]" ng-blur="formatTimeSlot(row.timeSlot[$index],row, $index)"/>
+              <input ng-if="$first" class="time-slot" ng-repeat="shift in row.workShift track by $index" ng-model="shift"/>
+            </div>
+          </th>
+        </tr>
+      </tbody>  
+  </table>
+
+  <!-- Angular Material Dependencies -->
+  <script src="/node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+
 </body>
 </html>

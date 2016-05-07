@@ -1,0 +1,24 @@
+{
+  "name": "schedz-2",
+  "version": "1.0.0",
+  "description": "Web app to help set schedule for work",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mibr020/schedz.git"
+  },
+  "keywords": [
+    "schedz"
+  ],
+  "author": "Mazin Ibrahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mibr020/schedz/issues"
+  },
+  "homepage": "https://github.com/mibr020/schedz#readme"
+}

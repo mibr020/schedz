@@ -1,4 +1,4 @@
 <div>
-    <span class="table-cell" ng-hide="editMode" ng-click="editMode = true; focusMode = true">{{staff}}</span>
-    <input ng-show="editMode" type="text" ng-model="staff" />
+    <span class="table-cell" ng-hide="editMode" ng-click="showInput($event, this)">{{staff}}</span>
+    <input ng-show="editMode" type="text" ng-model="staff" focus-mode="focusMode" ng-class="{focusClass: focusTest, blurClass: blurTest}" ng-blur="blurOut(this)"/>
 </div>

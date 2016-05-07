@@ -6,3 +6,59 @@
 
 // Import Bootstrap for Sass
 @import "bootstrap";
+
+//Variables
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+$morning: #FED1AE;
+$afternoon: #C6E4EE;
+$evening: #FAA0B9;
+$night: #757ECB;
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@include placeholder {
+    color: black;
+}
+
+input.table-cell,
+input.time-slot{
+	border: none;
+	background: transparent;
+	@include placeholder;
+	width: 100px;
+	text-align: left;
+}
+
+input.time-slot{
+  //background: $morning;
+  display: block;
+  text-align: center;
+  font-size: 8.5px;
+  border-radius: 2px;
+  width: 100px;
+}
+
+th.cell-container:first-of-type{
+  background: #B993D6;
+  input.table-cell{
+    text-align: center;
+  }
+  input.time-slot{
+    text-align: center;
+  }
+}
