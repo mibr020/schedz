@@ -24,7 +24,7 @@ function homeController($scope, FormatService) { //Add $firebaseObject
 	{
 		id : "1",
 		data : ["Mazin","Power Hour", "Out of office", "Open Queue", "Table Tennis", "Breakfast", "Unassigned", "Day Off"],
-		timeSlot : ["", "12:30 - 1:00", "12.30 to 4.00", "1230 to 1", "one to two", "Afternoon", "12 till 2 this week", "now till 3"],
+		timeSlot : ["12:30 - 1:00", "12:30 - 1:00", "12.30 to 4.00", "1230 to 1", "one to two", "Afternoon", "12 till 2 this week", "now till 3"],
 		workShift: ["Tues-Sat 12:00-21:00", "Mon-Fri 12:00 - 13:00"],
 		timeOfDay : ["", $scope.colorForTerm.afternoon, $scope.colorForTerm.morning, $scope.colorForTerm.night, $scope.colorForTerm.morning, $scope.colorForTerm.night, $scope.colorForTerm.morning, $scope.colorForTerm.evening ],
 		deleted: null
@@ -35,7 +35,7 @@ function homeController($scope, FormatService) { //Add $firebaseObject
 	{
 		id : "1",
 		data : ["Mazin","Power Hour", "Out of office", "Open Queue", "Table Tennis", "Breakfast", "Unassigned", "Day Off"],
-		timeSlot : [["Tues-Sat 12:00-21:00", "Mon-Fri 12:00 - 13:00"], "12:30 - 1:00", "12.30 to 4.00", "1230 to 1", "one to two", "Afternoon", "12 till 2 this week", "now till 3"],
+		timeSlot : ["Mon-Fri 12:00 - 13:00", "12:30 - 1:00", "12.30 to 4.00", "1230 to 1", "one to two", "Afternoon", "12 till 2 this week", "now till 3"],
 		timeOfDay : ["", $scope.colorForTerm.afternoon, $scope.colorForTerm.morning, $scope.colorForTerm.night, $scope.colorForTerm.morning, $scope.colorForTerm.night, $scope.colorForTerm.morning, $scope.colorForTerm.evening ],
 		deleted: null
 	},
