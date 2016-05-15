@@ -1,0 +1,357 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tool",
+				"toolSelected"
+			],
+			[
+				"sh",
+				"shiftHours"
+			],
+			[
+				"shi",
+				"shift"
+			],
+			[
+				"time",
+				"timeFormater"
+			],
+			[
+				"shift",
+				"shiftHours"
+			],
+			[
+				"write",
+				"writeToCSV"
+			],
+			[
+				"pa",
+				"payload"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"update",
+				"updatedRows"
+			],
+			[
+				"we",
+				"webkit-input-placeholder"
+			],
+			[
+				"Focus",
+				"focusMode"
+			],
+			[
+				"focus",
+				"focusMode"
+			],
+			[
+				"tr",
+				"target"
+			],
+			[
+				"table",
+				"tableCell"
+			],
+			[
+				"auto",
+				"autofocus	Attr"
+			],
+			[
+				"aut",
+				"autofocus	Attr"
+			],
+			[
+				"myapp",
+				"myappEditable"
+			],
+			[
+				"staff",
+				"staffInput"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"state",
+				"stateProvider"
+			],
+			[
+				"col",
+				"colgroup	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package con",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"m",
+			"Package Control: Install Package",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"sublime --version",
+			"sublime",
+			"subl --version",
+			"subl -version",
+			"subl",
+			"sublime -version",
+			"sublime"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Mazin/Documents/schedz-2/index.html",
+		"/Users/Mazin/Documents/Del_all_customers/GUI_test.py",
+		"/Users/Mazin/Desktop/Sharepoint project/Temple.SPO2013.DemoContent (3)/DemoContentFor_Home.txt",
+		"/Users/Mazin/Documents/GetXeroCustomers.py",
+		"/Users/Mazin/Documents/deleteTags2.js",
+		"/Users/Mazin/Documents/Delete tags.py",
+		"/Users/Mazin/Desktop/Sharepoint project/Temple.SPO2013.DemoContent (3)/DemoContentFor_FullWidth.txt",
+		"/Users/Mazin/Desktop/Sharepoint project/Temple.SPO2013.DemoContent (3)/example.html",
+		"/Users/Mazin/Desktop/Sharepoint project/Unedited CSS/Booger.css",
+		"/Users/Mazin/Desktop/Sharepoint project/COREV15.css",
+		"/Users/Mazin/Desktop/Sharepoint project/COREV15_BACKUP.css",
+		"/Users/Mazin/Desktop/Sharepoint project/unminified_COREV15.css",
+		"/Users/Mazin/Desktop/Sharepoint project/Booger.css",
+		"/Users/Mazin/Desktop/Sharepoint project/custom.css",
+		"/Users/Mazin/Downloads/unminified_booger",
+		"/Users/Mazin/Downloads/Booger.css",
+		"/Users/Mazin/Documents/schedz-2/app/directives/directives.js",
+		"/Users/Mazin/Documents/schedz-2/app/mainApp.js",
+		"/Users/Mazin/Documents/schedz-2/app/directives/formatService.js",
+		"/Users/Mazin/Documents/schedz-2/app/home/editable.html",
+		"/Users/Mazin/Documents/schedz-2/app/controller/homeController.js",
+		"/Users/Mazin/Documents/schedz-2/.gitignore",
+		"/Users/Mazin/Documents/schedz-2/readme.md",
+		"/Users/Mazin/Documents/schedz-2/editable.html",
+		"/Users/Mazin/Documents/schedz-2/app/home/staff.html",
+		"/Users/Mazin/Documents/schedz-2/stylesheets/styles.css",
+		"/Users/Mazin/Documents/schedz-2/staff.html",
+		"/Users/Mazin/Documents/schedz-2/tableCell.html",
+		"/Users/Mazin/Documents/schedz-2/app/home/homeDirective",
+		"/Users/Mazin/Documents/Schedule_app/css/main.scss",
+		"/Users/Mazin/Documents/Schedule_app/css/main.css",
+		"/Users/Mazin/Documents/Schedule_app/app/directives/directives.js",
+		"/Users/Mazin/Documents/Schedule_app/app/mainApp.js",
+		"/Users/Mazin/Documents/Schedule_app/app/controller/homeController.js",
+		"/Users/Mazin/Documents/Schedule_app/index.html",
+		"/Users/Mazin/Documents/Schedule_app/scripts/angular-ui-router.min.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/*",
+			"added",
+			"edited",
+			"/*Editied*/",
+			"Edit",
+			"Editted",
+			"Edited",
+			"edit",
+			"edited",
+			"edit",
+			"results.time",
+			".s4-wpcell>.ms-webpart-chrome, ",
+			".ms-vb-title",
+			".ms-rte-w",
+			".ms-webpart-cell-vertical",
+			".ms-wpContentDivSpace",
+			".ms-rte-w",
+			".ms-webpart-chrome-title",
+			".ms-SPZone>.s4-wpcell,",
+			".ms-SPZone>.s4-wpcell, .ms-SPZone>.s4-wpcell-plain, .ms-rtestate-write>.ms-rte-wpbox>div>.s4-wpcell, .ms-rtestate-write>.ms-rte-wpbox>div>.s4-wpcell-plain",
+			"ms-rte-w",
+			" ;",
+			".ms",
+			".ms-rte-wpbox",
+			".ms-rte",
+			".ms-rte-layoutszone-inner-editable",
+			"child",
+			"input",
+			"style",
+			"	\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 390.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 167.0,
+		"last_filter": "fgs",
+		"selected_items":
+		[
+			[
+				"fgs",
+				"form-group-sm"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
